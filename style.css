@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width:97vw;
+    height:150vh;
+    /* background-color: #FFCE33; */
+    background-image: url(oo.png);
+    background-size: cover;
+    opacity: .93;
+   
+}
+.container
+{
+    height:100%;
+    width:97vw;;
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+   
+    
+    
+
+}
+.card{
+    height: 80vh;
+    width: 45vw;
+    background-color: #2A2E34;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgb(12, 10, 0);
+    
+}
+.card .imm{
+    height: 59%;
+    width: 33%;
+    background-color: aqua;
+    border-radius: 8rem;
+    border: 2px solid #FFCE33;
+}
+.card .imm img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8rem;
+    object-fit: cover;
+}
+.card .imm:hover{
+    border: 5px solid white;
+    scale: 1.25;
+    transition: .7s ease-in;
+}
+.card .text h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size:4rem;
+    color: white;
+     text-shadow: 2px 2px 2px  rgb(0, 0, 0);
+}
+.card .text h1:hover{
+    text-shadow: 1px 1px 1px rgb(39, 31, 9);
+    scale: 1.1;
+    transition: .7s ease;
+    
+}
+.para{
+    padding: .5rem;
+    width:70vw;
+    height: 30vh;
+    text-align: justify;
+    color:rgb(49, 46, 41);
+    font-size: 1.3rem;
+}
+@media  screen and (max-width:1018px) {
+    .para{
+        width:70vw;
+        height: 30vh;
+        text-align: justify;
+        color:rgb(49, 46, 41);
+        font-size:1rem;
+    }
+    .card .text h1{
+        text-align: center;
+    }
+    .card .imm{
+        height: 45%;
+        width: 45%;
+        background-color: aqua;
+        border-radius: 8rem;
+        border: 2px solid #FFCE33;
+    }
+    .card{
+        height: 70vh;
+        width: 55vw;
+    }
+}
+@media  screen and (max-width:500px) {
+    .para{
+        width:70vw;
+        height: 30vh;
+        text-align: justify;
+        color:rgb(49, 46, 41);
+        font-size:.8rem;
+    }
+    .card .text h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .card .imm{
+        height: 45%;
+        width: 45%;
+        background-color: aqua;
+        border-radius: 8rem;
+        border: 2px solid #FFCE33;
+    }
+    .card{
+        height: 55vh;
+        width: 65vw;
+    }
+}
+@media  screen and (max-width:420px) {
+    .para{
+        width:70vw;
+        height: 30vh;
+        text-align: justify;
+        color:rgb(49, 46, 41);
+        font-size:.65rem;
+    }
+    .card .text h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .card .imm{
+        height: 45%;
+        width: 45%;
+        background-color: aqua;
+        border-radius: 6rem;
+        border: 2px solid #FFCE33;
+    }
+    .card{
+        height: 55vh;
+        width: 65vw;
+    }
+}
