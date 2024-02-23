@@ -4,17 +4,24 @@
     font-family: "Poppins", sans-serif;
 
 }
+body{
+    /* background-image: url(harshit\ gyb.png); */
+    background: rgb(255,206,51);
+    background: linear-gradient(90deg, rgba(255,206,51,1) 12%, rgba(255,255,255,1) 74%);
+    
+    
+}
 .container{
-    width:98.9vw;
+    width:98vw;
     height: 200vh;
     /* background-color:  #FFCE33;; */
-    background-image: url(harshit\ gyb.png);
-    background-repeat: no-repeat;
-    object-fit:contain;
+  
+    /* background-repeat: no-repeat;
+    object-fit:contain; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    align-items: center; 
+    /* gap: 1rem; */
     flex-direction: column;
     
 
@@ -55,13 +62,16 @@
 .container .text .para1 .para3{
     font-size: 7rem;
     font-weight: bold;
-    text-shadow: 2px 2px 10px rgb(255, 235, 189);
+    text-shadow: 2px 2px 10px rgb(251, 250, 249);
 
 }
 .container .text .icon{
     border-radius: .5rem;
     border: 1px solid black;
-    box-shadow: 2px 2px 2px 2px rgb(29, 24, 8);
+    box-shadow: 3px 3px 3px 2px rgb(29, 24, 8);
+    background-color:rgba(255, 255, 255, 0.4);
+    backdrop-filter:blur(5px);
+
 
 }
 
@@ -88,7 +98,7 @@
     width: 55%;
     height: 60%;
     border-radius: 7rem;
-    border: 3px solid white;
+    border: 3px solid rgb(6, 6, 6);
     
     
 
@@ -106,19 +116,134 @@
 }
 .container .card .card1 .com .com1{
     font-size: 3rem;
-    color: white;
+    background: #1B99E0;
+background: linear-gradient(to right, #1B99E0 9%, #DA4317 75%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
     font-weight: 700;
     border-radius: 1rem;
     text-align: center;
-   
-    text-shadow: 2px 2px 2px   rgb(50, 41, 10);
 
 }
 .container .card .card1 .com .com2{
     font-size: 1.1rem;
     border-radius: 1rem;
     text-align: center;
-    text-shadow: 1px 1px 1px   rgb(237, 227, 189);
+    /* text-shadow: 1px 1px 1px   rgb(186, 34, 72); */
     
 
+}
+@media screen and (max-width:1025px) {
+    .container{
+        height: 150vh;
+    }
+    .container .text .para1 .para2 p{
+        font-size: 3.5rem;
+       
+    }
+    .container .text .para1 .para2 h1{
+        font-size: 2.5rem;
+    }
+     .container .text .para1 .para3{
+        font-size: 6rem;
+     }
+     .container .text {
+        height: 20vh;
+     }
+     .container .card{
+        height: 50vh;
+     }
+     .container .card .card1 .imgg{
+        height: 30vh;
+        width: 25vw;
+     }
+    
+}
+@media screen and (max-width:830px) {
+    .container{
+        height: 170vh;
+
+    }
+    .container .text .para1 .para2 p{
+        font-size: 3rem;
+       
+    }
+    .container .text .para1 .para2 h1{
+        font-size: 2rem;
+    }
+     .container .text .para1 .para3{
+        font-size: 5rem;
+     }
+     .container .text {
+        height: 17vh;
+     }
+     .container .card{
+        height: 65vh;
+     }
+     .container .card .card1 .imgg{
+        height: 30vh;
+        width: 25vw;
+     }
+}
+@media screen and (max-width:768px){
+    .container{
+        height: 175vh;
+    }
+}
+@media screen and (max-width:442px) {
+    body{
+        width: 100vw;
+    }
+    .container{
+        height:370vh;
+    }
+    .container .text .para1 .para2 p{
+        font-size: 2.3rem;
+       
+    }
+    .container .text .para1 .para2 h1{
+        font-size: 2rem;
+    }
+     .container .text .para1 .para3{
+        font-size: 2.7rem;
+     }
+     .container .text {
+        height: 15vh;
+        width: 100vw;
+     }
+     .container .card{
+        height: 160vh;
+        width: 100vw;
+     }
+     .container .text .icon{
+        height: 10vh;
+        width: 10vh;
+     }
+     .container .text .icon img{
+        height: 10vh;
+        width: 10vh;
+     }
+     .container .card .card1 .imgg{
+        height: 20vh;
+        width: 70vw;
+     }
+     .container .card{
+        flex-direction: column;
+
+     }
+     .container .card .card1{
+         height: 59vh;
+         width: 80vw;
+         gap: 1rem;
+     }
+     .container .card .card1 .com .com2{
+        width: 80vw;
+        
+     }
+     .container .card .card1 .com .com1{
+        width: 80vw;
+        font-size: 2rem;
+     }    
+    
 }

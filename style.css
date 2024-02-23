@@ -7,9 +7,11 @@ body{
     width:97vw;
     height:150vh;
     /* background-color: #FFCE33; */
-    background-image: url(oo.png);
-    background-size: cover;
-    opacity: .93;
+    /* background-image: url(oo.png);
+    background-size: cover; */
+    background: rgb(255,206,51);
+background: linear-gradient(90deg, rgba(255,206,51,1) 12%, rgba(255,255,255,1) 74%);
+
    
 }
 .container
@@ -29,7 +31,9 @@ body{
 .card{
     height: 80vh;
     width: 45vw;
-    background-color: #2A2E34;
+    background-color: rgba(27, 27, 27, 0.8);
+
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -43,7 +47,7 @@ body{
 .card .imm{
     height: 59%;
     width: 33%;
-    background-color: aqua;
+    
     border-radius: 8rem;
     border: 2px solid #FFCE33;
 }
@@ -59,14 +63,21 @@ body{
     transition: .7s ease-in;
 }
 .card .text h1{
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Playfair Display", serif;
     font-weight: 500;
     font-size:4rem;
-    color: white;
-     text-shadow: 2px 2px 2px  rgb(0, 0, 0);
+    /* color: yellow; */
+    /* background: #34F1E9; */
+background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+     /* text-shadow: 2px 2px 2px  rgb(0, 0, 0); */
 }
 .card .text h1:hover{
-    text-shadow: 1px 1px 1px rgb(39, 31, 9);
+   
     scale: 1.1;
     transition: .7s ease;
     
@@ -76,30 +87,40 @@ body{
     width:70vw;
     height: 30vh;
     text-align: justify;
-    color:rgb(49, 46, 41);
+    color:rgb(12, 12, 11);
     font-size: 1.3rem;
+   
 }
-@media  screen and (max-width:1018px) {
+.para p{
+    font-size: 2rem;
+}
+@media  screen and (max-width:1025px) {
+    body{
+        height: 130vh;
+    }
     .para{
         width:70vw;
-        height: 30vh;
+        height: 40vh;
         text-align: justify;
-        color:rgb(49, 46, 41);
-        font-size:1rem;
+        color:rgb(17, 17, 16);
+        font-size:2rem;
     }
     .card .text h1{
         text-align: center;
     }
     .card .imm{
-        height: 45%;
+        height: 35vh;
         width: 45%;
-        background-color: aqua;
+     
         border-radius: 8rem;
         border: 2px solid #FFCE33;
     }
     .card{
-        height: 70vh;
-        width: 55vw;
+        height: 50vh;
+        width: 65vw;
+    }
+    .container{
+        height: 110vh;
     }
 }
 @media  screen and (max-width:500px) {
@@ -126,27 +147,32 @@ body{
         width: 65vw;
     }
 }
-@media  screen and (max-width:420px) {
+@media  screen and (max-width:440px) {
+    body{
+        height: 140vh;
+    }
     .para{
         width:70vw;
-        height: 30vh;
+        height: 70vh;
         text-align: justify;
-        color:rgb(49, 46, 41);
-        font-size:.65rem;
+        color:rgb(9, 9, 9);
+        font-size:1rem;
+    }.para p{
+        font-size: 1.3rem;
     }
     .card .text h1{
         text-align: center;
         font-size: 2.5rem;
     }
     .card .imm{
-        height: 45%;
-        width: 45%;
-        background-color: aqua;
+        height: 30vh;
+        width: 60%;
+      
         border-radius: 6rem;
         border: 2px solid #FFCE33;
     }
     .card{
-        height: 55vh;
+        height: 40vh;
         width: 65vw;
     }
 }
