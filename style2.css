@@ -13,7 +13,18 @@ body{
     /* justify-content: center; */
     /* align-items: center; */ 
 }
+.harshitt{position:relative;
+    left:0;
+    bottom:0;
+    font-size: .7rem;
+    color: rgb(205, 167, 28);
+}
+.harshitt a{
+    text-decoration: none;
+    color: rgb(205, 167, 28);
+    opacity: .45;
 
+}
 
 
 
@@ -31,11 +42,13 @@ body{
 .cont .text{
     width:85%;
     height: 20vh;
-    /* color:#2A2E34; */
-    background: #9619f6;
-    background: linear-gradient(to right, #9619f6 0%, #000000 69%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: #FF0000;
+background: linear-gradient(to left, #FF0000 0%, #000000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    
+    
     font-family: Kaushan Script;
 
     font-size: 6rem;
@@ -120,7 +133,7 @@ body{
 }
 @media screen and (max-width:1050px){
     body{
-        height: 230vh;
+        height: 212vh;
     }
     .cont{
         height: 210vh;
@@ -142,7 +155,7 @@ body{
 } 
 @media screen and (max-width:825px){
     body{
-        height: 200vh;
+        height: 182vh;
 
     }
     .cont{
@@ -161,10 +174,26 @@ body{
     }
     
 }
+@media screen and (max-width:770px){
+    body{
+        height: 192vh;
+
+    }
+    .cont{
+        height: 190vh;
+    }
+    .cont .text{
+        height: 10vh;
+        margin-bottom: 1rem;
+        font-size:4.5rem ;
+    } .cont .card .card1{
+        gap: 3.5rem;
+    }
+}
 
 @media screen and (max-width:450px){
     body{
-        height: 550vh;
+        height: 532vh;
     }
     .cont{
         height: 530vh;

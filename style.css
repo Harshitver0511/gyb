@@ -10,9 +10,21 @@ body{
     /* background-image: url(oo.png);
     background-size: cover; */
     background: rgb(255,206,51);
-background: linear-gradient(90deg, rgba(255,206,51,1) 12%, rgba(255,255,255,1) 74%);
+background: linear-gradient(90deg, rgba(255,206,51,1) 12%, rgba(255,255,255,.9) 74%);
+backdrop-filter: blur(8px);
 
    
+}
+.harshitt{position:relative;
+    left:0;
+    bottom:0;
+    font-size: .7rem;
+    color: rgb(205, 167, 28);
+}
+.harshitt a{
+    text-decoration: none;
+    color: rgb(205, 167, 28);
+
 }
 .container
 {
@@ -63,18 +75,12 @@ background: linear-gradient(90deg, rgba(255,206,51,1) 12%, rgba(255,255,255,1) 7
     transition: .7s ease-in;
 }
 .card .text h1{
-    /* font-family: "Poppins", sans-serif; */
     font-family: "Playfair Display", serif;
     font-weight: 500;
     font-size:4rem;
-    /* color: yellow; */
-    /* background: #34F1E9; */
 background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-
-
-     /* text-shadow: 2px 2px 2px  rgb(0, 0, 0); */
 }
 .card .text h1:hover{
    
@@ -84,19 +90,21 @@ background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
 }
 .para{
     padding: .5rem;
-    width:70vw;
+    width:70vw; 
     height: 30vh;
     text-align: justify;
     color:rgb(12, 12, 11);
     font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
 }
 .para p{
     font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @media  screen and (max-width:1025px) {
     body{
-        height: 130vh;
+        height: 105vh;
     }
     .para{
         width:70vw;
@@ -120,7 +128,23 @@ background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
         width: 65vw;
     }
     .container{
-        height: 110vh;
+        height: 104vh;
+    }
+}
+@media  screen and (max-width:825px) {
+    body{
+        height: 130vh;
+    }
+    .container{
+        height: 129vh;
+    }
+}
+@media  screen and (max-width:770px) {
+    body{
+        height: 150vh;
+    }
+    .container{
+        height: 148vh;
     }
 }
 @media  screen and (max-width:500px) {
@@ -138,7 +162,6 @@ background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
     .card .imm{
         height: 45%;
         width: 45%;
-        background-color: aqua;
         border-radius: 8rem;
         border: 2px solid #FFCE33;
     }
@@ -149,7 +172,10 @@ background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
 }
 @media  screen and (max-width:440px) {
     body{
-        height: 140vh;
+        height: 102vh;
+    }
+    .container{
+        height: 100vh;
     }
     .para{
         width:70vw;
@@ -174,5 +200,13 @@ background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
     .card{
         height: 40vh;
         width: 65vw;
+    }
+}
+@media  screen and (max-width:380px) {
+    body{
+        height: 131vh;
+    }
+    .container{
+        height: 130vh;
     }
 }
